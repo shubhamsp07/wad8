@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href=
+"http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+	<script src=
+		"http://code.jquery.com/jquery-1.11.1.min.js">
+	</script>
+
+	<script src=
+"http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
+	</script>
+</head>
+
+<body>
+	<center>
+		<h1>GeeksforGeeks</h1>
+
+		<h4>
+			Design Dialog popup using jQuery Mobile
+		</h4>
+
+		<a href="#DialogBox" data-rel="popup"
+			data-position-to="window" data-transition="pop"
+			class="ui-btn ui-corner-all ui-shadow ui-btn-inline
+			ui-icon-delete ui-btn-icon-left ui-btn-b">
+			Remove page...
+		</a>
+		
+		<div data-role="popup" id="DialogBox"
+			data-overlay-theme="b" data-theme="b"
+			data-dismissible="false"
+			style="max-width:400px;">
+			
+			<div data-role="header" data-theme="a">
+				<h1>Remove Page?</h1>
+			</div>
+			
+			<div role="main" class="ui-content">
+				<h3 class="ui-title">
+					Are you want to remove GeeksforGeeks page?
+				</h3>
+				
+				<a href="#" class="ui-btn ui-corner-all
+					ui-shadow ui-btn-inline ui-btn-b"
+					data-rel="back">Cancel
+				</a>
+				
+				<a href="#" class="ui-btn ui-corner-all
+					ui-shadow ui-btn-inline ui-btn-b"
+					data-rel="back" data-transition="flow">
+					Remove
+				</a>
+			</div>
+		</div>
+	</center>
+	<div data-role="dialog" id="dialog">
+		<div data-role="header">
+		  <h1>Dialog Only Page</h1>
+		</div>
+		<div data-role="content">
+		  <p>I can only be served as a dialog, and I don't need a data-rel="dialog" attribute on a link</p>
+		</div>
+	  </div>
+</body>
+
+</html>
